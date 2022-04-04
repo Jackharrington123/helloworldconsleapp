@@ -9,5 +9,9 @@
 int main()
 {
     std::cout << "Hello World!\n";
+    std::cout << "My name is jack harrington!\n";
+    std::cout << "I like to play video game\n";
+    std::cout << "this class is awsome!\n";
+    return 0;
 }
 
