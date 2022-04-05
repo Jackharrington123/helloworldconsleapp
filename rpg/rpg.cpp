@@ -137,7 +137,7 @@ if (response == "L")
 				}
 				printf("\nyou did it!");
 				printf("\n you defeated your first foe!");
-				printf("")
+				printf("");
 
 			}
 
@@ -158,12 +158,17 @@ int room3kidsroom(player& p)
      key = 1;
 	 printf("\n you leave the room");
 }
-int room4wineroom(player& p);
+int room4wineroom(player& p)
+{
+	printf("\nyou look around the room, as expected there is shelfs of wine, a few large friges and a few barrels around the room");
+	printf("\nyou dont see much of use right now so you leave the room but you keep in mind the contents of the room so it could come in use later");
+}
 int room5kitchen(player& p);
 int room6quizroom(player& p);
 int main()
 {
-		nameinstructions();
+	player P;
+		nameinstructions(P);
 		srand((unsigned)time(NULL));
 		int min = 15;
 		int max = 40;
@@ -193,7 +198,7 @@ int main()
 		string response;
 		cin >> response;
 		fseek(stdin, 0, SEEK_END);
-		room1andplannedfight(player & P);
+		room1andplannedfight(P);
 		printf("good job, but now its time to move farther into the cave.");
 		printf("\n as you move farther into the cave you see a light at the end, \n you walk towards the light, once there you find out the sorce of the light was the sun outside.\n stepping out of the cave you are greeted with a house, the old wood was rotting and splintering.\n do you want to go inside the house or look around first.\n 1)Find a way inside \n2)look around");
 		cin >> response;
@@ -230,7 +235,7 @@ int main()
 			printf("\nyou find three doors");
 			printf("\n two are locked but one is not ");
 			printf("\nyou open the door, inside is a kids room,");
-			room3kidsroom();
+			room3kidsroom(P);
 			printf("\nback in the hallway now you still cant open the doors so you go back down the stairs to the floor you came from.");
 
 
@@ -239,7 +244,11 @@ int main()
 		if (response == "2");
 		{
 			printf("\n you go down the stairs");
-			printf("\once at the bottom there is 3 doors you see, \n you walk up to all of them but only one of them is able to be unlocked.")
+			printf("\once at the bottom there is 3 doors you see, \n you walk up to all of them but only one of them is able to be unlocked.");
+			printf("\ninside is wine cellar ");
+			room4wineroom(P);
+			printf("you go out of the room and back up the room");
+
 		}
 
 
