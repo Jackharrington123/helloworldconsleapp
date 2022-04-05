@@ -13,6 +13,7 @@
 #define _use_math_defines
 #include <math.h>
 #include <fstream>
+
 using namespace std;
 
 struct player {
@@ -136,6 +137,7 @@ if (response == "L")
 				}
 				printf("\nyou did it!");
 				printf("\n you defeated your first foe!");
+				printf("")
 
 			}
 
@@ -143,6 +145,22 @@ if (response == "L")
 	}
 
 }
+int room2diningroom(player& p)
+{
+
+}
+int room3kidsroom(player& p)
+{
+	printf("\nin the room is nothing special");
+	printf("\nlooking around the room you dont find much exept and odd shapped key");
+	printf("\n you pick up the key");
+	int key;
+     key = 1;
+	 printf("\n you leave the room");
+}
+int room4wineroom(player& p);
+int room5kitchen(player& p);
+int room6quizroom(player& p);
 int main()
 {
 		nameinstructions();
@@ -206,6 +224,24 @@ int main()
 
 		}
 		cin >> response;
+		if (response == "1");
+		{
+			printf("\n you go up the stairs");
+			printf("\nyou find three doors");
+			printf("\n two are locked but one is not ");
+			printf("\nyou open the door, inside is a kids room,");
+			room3kidsroom();
+			printf("\nback in the hallway now you still cant open the doors so you go back down the stairs to the floor you came from.");
+
+
+
+		}
+		if (response == "2");
+		{
+			printf("\n you go down the stairs");
+			printf("\once at the bottom there is 3 doors you see, \n you walk up to all of them but only one of them is able to be unlocked.")
+		}
+
 
 		
 
